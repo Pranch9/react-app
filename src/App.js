@@ -1,15 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import Header from './components/header';
+import Layout from './components/layout';
+import Footer from './components/footer';
+
+const App = () => {
   return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
-          <p> Hello world!!!! </p>
-        </header>
-      </div>
+      <>
+        <Header title="Title"
+                descr="Descriprion"/>
+        <Layout id="Layout1"
+                title="Title"
+                descr="Description"
+                urlBg="urlBg"
+                colorBg="colorBg"/>
+        <Layout id="Layout2"
+                title="Title"
+                descr="Description"
+                urlBg="urlBg"
+                colorBg="colorBg"/>
+        <Layout id="Layout3"
+                title="Title"
+                descr="Description"
+                urlBg="urlBg"
+                colorBg="colorBg"/>
+        <Footer/>
+      </>
   );
 }
-
 export default App;
